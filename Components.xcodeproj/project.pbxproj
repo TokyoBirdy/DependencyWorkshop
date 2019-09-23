@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1689091E2338D461000CCFDD /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 1689091C2338D461000CCFDD /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		168909252338D687000CCFDD /* TrackRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168909242338D687000CCFDD /* TrackRowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		168909192338D461000CCFDD /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1689091C2338D461000CCFDD /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 		1689091D2338D461000CCFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		168909242338D687000CCFDD /* TrackRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRowCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				1689091C2338D461000CCFDD /* Components.h */,
 				1689091D2338D461000CCFDD /* Info.plist */,
+				168909242338D687000CCFDD /* TrackRowCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					168909182338D461000CCFDD = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168909252338D687000CCFDD /* TrackRowCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		168909222338D461000CCFDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.humlan.components.Components;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		168909232338D461000CCFDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
