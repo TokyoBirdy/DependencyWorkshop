@@ -9,10 +9,12 @@
 import SwiftUI
 
 public struct TrackRowCell: View {
+    let image = ("🎻" as NSString).image(attributes: [.font: UIFont.systemFont(ofSize: 20)], size: CGSize(width: 44, height: 44))
+
     public init() {}
     public var body: some View {
         HStack {
-            Image(systemName: "book")
+            image.map { Image(uiImage: $0) }
             VStack {
                 Text("三線の花").font(.title)
                 Text("BEGIN").font(.subheadline)

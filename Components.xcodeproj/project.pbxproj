@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162CD0F1233904C500C16BBF /* NSString+Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 162CD0EF233904C500C16BBF /* NSString+Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		162CD0F2233904C500C16BBF /* NSString+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 162CD0F0233904C500C16BBF /* NSString+Image.m */; };
 		1689091E2338D461000CCFDD /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 1689091C2338D461000CCFDD /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		168909252338D687000CCFDD /* TrackRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168909242338D687000CCFDD /* TrackRowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		162CD0EF233904C500C16BBF /* NSString+Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Image.h"; sourceTree = "<group>"; };
+		162CD0F0233904C500C16BBF /* NSString+Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Image.m"; sourceTree = "<group>"; };
 		168909192338D461000CCFDD /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1689091C2338D461000CCFDD /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 		1689091D2338D461000CCFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 				1689091C2338D461000CCFDD /* Components.h */,
 				1689091D2338D461000CCFDD /* Info.plist */,
 				168909242338D687000CCFDD /* TrackRowCell.swift */,
+				162CD0EF233904C500C16BBF /* NSString+Image.h */,
+				162CD0F0233904C500C16BBF /* NSString+Image.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -63,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1689091E2338D461000CCFDD /* Components.h in Headers */,
+				162CD0F1233904C500C16BBF /* NSString+Image.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162CD0F2233904C500C16BBF /* NSString+Image.m in Sources */,
 				168909252338D687000CCFDD /* TrackRowCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
