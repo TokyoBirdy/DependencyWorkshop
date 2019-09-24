@@ -11,7 +11,18 @@
 		162CD0F2233904C500C16BBF /* NSString+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 162CD0F0233904C500C16BBF /* NSString+Image.m */; };
 		1689091E2338D461000CCFDD /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 1689091C2338D461000CCFDD /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		168909252338D687000CCFDD /* TrackRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168909242338D687000CCFDD /* TrackRowCell.swift */; };
+		16DA731C233A751E00FE13DC /* libColorToken.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DA731B233A751E00FE13DC /* libColorToken.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1689E5EA233A7FE3004C739E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1689E5E6233A7FE3004C739E /* ColorToken.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 16DA7304233A6C5C00FE13DC;
+			remoteInfo = ColorToken;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		162CD0EF233904C500C16BBF /* NSString+Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Image.h"; sourceTree = "<group>"; };
@@ -20,6 +31,8 @@
 		1689091C2338D461000CCFDD /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 		1689091D2338D461000CCFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		168909242338D687000CCFDD /* TrackRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRowCell.swift; sourceTree = "<group>"; };
+		1689E5E6233A7FE3004C739E /* ColorToken.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ColorToken.xcodeproj; path = ../ColorToken/ColorToken.xcodeproj; sourceTree = "<group>"; };
+		16DA731B233A751E00FE13DC /* libColorToken.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libColorToken.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16DA731C233A751E00FE13DC /* libColorToken.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +50,10 @@
 		1689090F2338D461000CCFDD = {
 			isa = PBXGroup;
 			children = (
+				1689E5E6233A7FE3004C739E /* ColorToken.xcodeproj */,
 				1689091B2338D461000CCFDD /* Components */,
 				1689091A2338D461000CCFDD /* Products */,
+				16DA731A233A751E00FE13DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +75,22 @@
 				162CD0F0233904C500C16BBF /* NSString+Image.m */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1689E5E7233A7FE3004C739E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1689E5EB233A7FE3004C739E /* libColorToken.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16DA731A233A751E00FE13DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16DA731B233A751E00FE13DC /* libColorToken.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,12 +152,28 @@
 			mainGroup = 1689090F2338D461000CCFDD;
 			productRefGroup = 1689091A2338D461000CCFDD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1689E5E7233A7FE3004C739E /* Products */;
+					ProjectRef = 1689E5E6233A7FE3004C739E /* ColorToken.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				168909182338D461000CCFDD /* Components */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1689E5EB233A7FE3004C739E /* libColorToken.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libColorToken.a;
+			remoteRef = 1689E5EA233A7FE3004C739E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		168909172338D461000CCFDD /* Resources */ = {
