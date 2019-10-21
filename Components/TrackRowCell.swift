@@ -8,17 +8,28 @@
 
 import SwiftUI
 import ColorToken
+import FontToken
 
 public struct TrackRowCell: View {
     let image = ("🎻" as NSString).image(attributes: [.font: UIFont.systemFont(ofSize: 20)], size: CGSize(width: 44, height: 44))
+    let heartFont = FontToken.heartFont()
+    let catFont = FontToken.catFont()
+    let heart: CTFont
+    let cat: CTFont
 
-    public init() {}
+    public init() {
+        heart = unsafeBitCast(self.heartFont, to: CTFont.self)
+        cat = unsafeBitCast(self.catFont, to: CTFont.self)
+        heartFont?.release()
+        catFont?.release()
+    }
+
     public var body: some View {
         HStack {
             image.map { Image(uiImage: $0) }
             VStack {
-                Text("三線の花").font(.title).foregroundColor(Color(ColorToken.小豆色))
-                Text("BEGIN").font(.subheadline)
+                Text("三線の花").foregroundColor(Color(ColorToken.小豆色)).font(Font(heart))
+                Text("BEGIN").font(Font(cat))
             }
         }
     }

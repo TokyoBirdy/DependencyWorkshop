@@ -1,3 +1,6 @@
 [submodule "ColorToken"]
 	path = ColorToken
 	url = ../../ColorToken/
+[submodule "FontToken"]
+	path = FontToken
+	url = ../../FontToken/
